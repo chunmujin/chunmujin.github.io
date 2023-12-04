@@ -1,0 +1,88 @@
+.container {
+    width: 450px;
+    height: 550px;
+    background-image: url(/images/banner4.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body{
+    background-color: #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    width: 30%;
+    text-align: left;
+    color: #ddd;
+}
+
+td {
+    position: relative;
+    color: #f44336;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    background-color: #000;
+    border-bottom: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: white;
+    opacity: .6;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    background-color: #282928;
+    color : red;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: #676b67;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group input {
+    width: 48%;
+}
+
+.msg {
+    font-size: 12px;
+    color: #f44336;
+    margin: 5px 0 0 5px;
+    display: none;
+}
+
+.msg-password {
+    color: #d60c0c;
+}
+
+
+
+
+

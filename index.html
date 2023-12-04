@@ -7,10 +7,13 @@
     <title>나의 홈페이지</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="css/index.css">
+   
+    
 </head>
 
-<body>
 
+<body>
+   
     <header>
         <h1>무진 홈페이지</h1>
         <nav>
@@ -20,49 +23,205 @@
                 <li><a href="#section2">취미</a></li>
                 <li><a href="#section3">로드맵</a></li>
                 <li><a href="#section4">맴버쉽</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
+                <li><a href="#" id="resgister" >회원가입</a></li>
+                <li>
+                    <a href="#" id="resgister2" >로그인</a>
+                </li>
+                
+            </nav>
     </header>
     
 
         <section id="home" class="section" style="background-image: url(images/banner2.jpg);">
-            <h2>해위~</h2>
-            <p>홈페이지</p>
+            
         </section>
    
 
-    <section id="section1" class="section" >
+        <section id="section1" class="section">
+            <div style="overflow: hidden;">
+                <div class="container">
+                    <div class="inner">
+                        <img src="/images/KakaoTalk_20231203_203751071_02.jpg" alt="" width="350px" height="450px">
+                        <p>6살의나...</p>
+                    </div>
+                    <div class="inner">
+                        <img src="/images/고등단체사진.jpg" alt="" width="450px" height="450px">
+                        <p>고등학교</p>
+                    </div>
+                    <div class="inner">
+                        <img src="/images/그냥2.jpg" alt="" width="450px" height="450px">
+                        <p>상대적으로 마를떄1</p>
+                    </div>
+                    <div class="inner">
+                        <img src="/images/그냥.jpg" alt="" width="450px" height="450px">
+                        <p>상대적으로 마를떄2</p>
+                    </div>
+                    <div class="inner">
+                        <img src="/images/1231312321312.jpg" alt="" width="450px" height="500px">
+                        <p>상대적으로 마를떄3</p>
+                    </div>
+                    <div class="inner">
+                        <img src="/images/역변.....jpg" alt="" width="450px" height="450px">
+                        <p>역변...</p>
+                    </div>
+                </div>
+            </div>
+            <div id="button_img">
+                <button id="btn1">1</button>
+                <button id="btn2">2</button>
+                <button id="btn3">3</button>
+                <button id="btn4">4</button>
+                <button id="btn5">5</button>
+                <button id="btn6">6</button>
+            </div>
+        </section>
+
+    
+        <section id="section2" class="section">
+            
+            <div class="jb-a">
+                <button class="btn-open-modal" onclick="openModal('myModal1')">
+                    <div class="jb-c"><img src="/images/먹방2.jpg" alt="" width="300px" height="300"></div>
+                    <img src="/images/먹방1.jpg" alt="" width="300px" height="300">
+                </button>
+            </div>    
+        
+            <div class="modal" id="myModal1">
+        <div class="modal_body">
+            <h2>맛집탐방</h2>
+            <img src="/images/크림빵.jpg" alt="" width="250px">
+            <br>
+            <p>맛있는 음식과 술을 즐기는 행복한 돼지
+                맛집을 가기 위해 여행을 가는 나...  웨이팅이 몇시간이든 먹을 것에 진심입니다 같이 공유해요
+                술을 좋아하게 되면서 살이 20키로가찐 이 돼지는 오늘도 행복합니다
+            </p>
+            <button onclick="closeModal('myModal1')">closewindow</button>
+        </div>
+    </div>
+
+    <button class="btn-open-modal" onclick="openModal('myModal2')"><img src="/images/축구1.jpg" alt="" width="300px" height="300"></button>
+    <div class="modal" id="myModal2">
+        <div class="modal_body">
+            <h2>축구</h2>
+            <img src="/images/banner5.jpg" alt="" width="250px">
+            <br>
+            <p>저는 초등학교부터 축구를 즐겨왔고, 나이가 들어도 계속해서 즐길 계획입니다. 
+                축구를 하면서 새로운 친구를 만들고 예상치 못한 경험들을 쌓았습니다. 
+                축구는 나에게 활력과 행복을 주는 특별한 취미이며, 
+                앞으로도 계속해서 즐겨 나가고자 합니다. 감사합니다.</p>
+            <button onclick="closeModal('myModal2')">closewindow</button>
+        </div>
+    </div>
        
-            <div class="container">
-               <h2>자기소개</h2>
-               
-           
+    <button class="btn-open-modal" onclick="openModal('myModal3')"><img src="/images/강원도걷기 (3).png" alt="" width="300px"height="300" ></button>
+    <div class="modal" id="myModal3">
+        <div class="modal_body">
+            <h2>걷기</h2>
+            <img src="/images/강원도걷기 (2).png" alt="" width="250px">
+            <br>
+            <p> 
+                걷는 동안 우연히 발견한 작은 음식점이나 아늑한 카페, 
+                그리고 많은 응원과 격려를 받은 순간들은 여행의 색다른 맛과 따뜻한 기억으로 남아 있습니다. 
+                자연의 아름다움과 함께 사람들과 소통하며 
+                얻은 소소한 행복들은 강원도 국토종주의 진정한 가치를 이루고 있습니다.
+            </p>
+            <button onclick="closeModal('myModal3')">closewindow</button>
+        </div>
+    </div>
+       
+    <button class="btn-open-modal" onclick="openModal('myModal4')"><img src="/images/사진찍기.jpg" alt="" width="300px" height="300"></button>
+    <div class="modal" id="myModal4">
+        <div class="modal_body">
+            <h2>사진찍기</h2>
+            <img src="/images/사진....jpg" alt="" width="250px">
+            <br>
+            <p>사실 사진 찍는거 안좋아 합니다 여자친구 강제로 열심히 찍어줘요... 아 술먹으면 인생네컷 찍는게 습관이 되었습니다 돈아깝다...!</p>
+            <button onclick="closeModal('myModal4')">closewindow</button>
+        </div>
+    </div>
+       
+    <button class="btn-open-modal" onclick="openModal('myModal5')"><img src="/images/여자친구.jpg" alt="" width="300px" height="300"></button>
+    <div class="modal" id="myModal5">
+        <div class="modal_body">
+            <h2>여자친구?</h2>
+            <img src="/images/근육몬.jpg" alt="" width="250px" height="100px">
+            <a href="https://www.instagram.com/h_h___stone/"><img src="/images/instar.png" alt="" width="30px" height="30px"></a>
+            <button onclick="closeModal('myModal5')">closewindow</button>
+        </div>
+    </div>
+    
+    <button class="btn-open-modal" onclick="openModal('myModal6')"><img src="/images/친구.jpg" alt="" width="300px" height="300"></button>
+    <div class="modal" id="myModal6">
+        <div class="modal_body">
+            <h2>친구</h2>
+            <img src="/images/banner5.jpg" alt="" width="250px">
+            <br>
+            <p>그냥 친구들...</p>
+            <button onclick="closeModal('myModal6')">closewindow</button>
+
+        </div>
+    </div>
+    
+    </section>
+
+    <section id="section3" class="section" style="background-image: url(images/330647-eng.png)" ;>
         
     </section>
 
-    <section id="section2" class="section" style="background-image: url(images/banner2.jpg);">
-        <h2>취미</h2>
-        <p>이곳에 섹션 2의 내용을 추가합니다.</p>
+    
+    <section id="section4" class="section" >
+        
+        
+        <button class="btn-open-modal" onclick="openModal('myModal10')"><img src="/images/맴버쉽.png" alt=""></button>
+        <div class="modal" id="myModal10">
+            <div class="modal_body">
+                <table id="tb-guestbook">
+                    <thead>
+                      <tr>
+                        <th>이름</th>
+                        <th>아이디</th>
+                        <th>작성일시</th>
+                      </tr>
+                    </thead>
+                    <tbody></tbody>
+                  </table>
+                <button onclick="closeModal('myModal10')">closewindow</button>
+            </div>
+        </div>
+        
+
     </section>
 
-    <section id="section3" class="section" style="background-image: url(images/banner2.jpg);">
-        <h2>로드맵</h2>
-        <p>이곳에 섹션 3의 내용을 추가합니다.</p>
-    </section>
-
-    <section id="section4" class="section" style="background-image: url(images/banner2.jpg);">
-        <h2>맴버쉽</h2>
-        <p>이곳에 섹션 4의 내용을 추가합니다.</p>
-    </section>
-
-    <section id="about" class="section" style="background-image: url(images/banner2.jpg);">
-        <h2>About</h2>
-        <p>이곳에 About 섹션의 내용을 추가합니다.</p>
-    </section>
 
     <footer>
-        너무 하기 싫어
+        <div class="login-button">
+        <button class="btn-open-modal" id="abc" onclick="openModal('myModal7')">로그인</button>
+            <div class="modal" id="myModal7">
+                <div class="modal_body2">
+                    <h2>로그인</h2>
+                    <form action="" name="signupFrm">
+                        <table>
+                          <tr>
+                            <th><label for="id">아이디</label></th>
+                            <td>
+                              <input type="text" id="id" name="id" required>
+                              <p class="msg msg-required">필수입력항목입니다</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th><label for="password">패스워드</label></th>
+                            <td>
+                              <input type="password" id="password" name="password" required>
+                              <p class="msg msg-required">필수입력항목입니다</p>
+                              <p class="msg msg-password">영문자 대/소문자 특수문자, 숫자 포함 8 ~ 32자</p>
+                                
+                            </td>
+                        </tr> 
+                    </div>
+                </div>
+            </div>
+            <button id="button3" onclick="closeModal('myModal7')">닫기</button>
+            
     </footer>
 
     <script src="js/index.js"></script>

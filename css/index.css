@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+/* 페이지 헤더 스타일 */
 header {
     display: flex;
     justify-content: space-between;
@@ -12,15 +13,100 @@ header {
     padding: 10px;
     position: sticky;
     top: 0;
-    z-index: 1000
+    z-index: 1000;
+    right: auto;
+}
+
+
+/*=============================자기소개==========================================*/
+
+
+.container{
+    width: 600vw;
+    transition: transform 0.5s;
+
+}
+.inner{
+    width: 100vw;
+    float: left;
+}
+.inner img{
+ width: 100%;   
 }
 
 #section1{
-    color: black;
-    background-color: aqua;
-    
+    background-image: url(/images/달달.jpg);
+    z-index: 1;
 }
 
+
+
+#button_img {
+    /* 배경색 및 테두리 스타일 지정 */
+    background-color: #000;
+    border: none;
+    color: #fff; /* 흰 글자색 */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    /* 그림자 효과 추가 */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    /* 호버 효과 추가 */
+    transition: background-color 0.3s ease;
+  }
+  
+  #button_img:hover {
+    background-color: #333; /* 호버 시 어두운 회색으로 변경 */
+  }
+
+/*===============================취미======================================== */
+
+#section2 {
+    background-color: #000;
+    padding: 200px 300px 200px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* 이미지가 두 줄로 배열되도록 설정 */
+}
+
+/*===============================로드맵======================================== */
+
+
+
+
+
+
+
+
+
+
+/*======================================================================= */
+/*===============================맴버쉽======================================== */
+#section4 {
+    background-image: url(/images/banner5.jpg);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*======================================================================= */
+
+
+/* 내비게이션 메뉴 스타일 */
 nav ul {
     list-style: none;
     display: flex;
@@ -36,10 +122,12 @@ nav a {
     font-weight: bold;
 }
 
+/* 공통 섹션 스타일 */
 .section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; /* 중앙 정렬을 위해 추가 */
+    align-items: center; /* 중앙 정렬을 위해 추가 */
     text-align: center;
     padding: 100px;
     color: white;
@@ -50,6 +138,147 @@ nav a {
 }
 
 
+.jb-c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition:  0.5s linear;
+  }
+  .jb-a:hover .jb-c {
+    opacity: 1;
+  }
+
+
+
+/* =====================모달 스타일 */
+.btn-open-modal {
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+    filter: blur(0);
+    
+}
+
+.btn-open-modal img:hover {
+    filter: blur(5px); /* Hover 시 5px의 Blur 효과 */
+    transition: filter 0.5s ease-in-out;
+
+}   
+
+
+
+#abcd a,
+#abc a {
+    color: white; /* 글자색 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    
+}
+
+/* 모달 스타일 */
+.modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000; 
+}
+
+/* 모달 내용 스타일 */
+.modal_body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    width: 400px;
+    height: 600px;
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+}
+.modal_body2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(14, 13, 13);
+    width: 500px;
+    height: 1100px;
+    padding: 40px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+}
+
+/* 모달 내 이미지 스타일 */
+.modal_body img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.modal h2 {
+    color: #3498db;
+}
+
+.modal p {
+    color: #0e0e7a;
+}
+
+.modal table th,
+.modal table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.modal table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.modal table th,
+.modal table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.msg {
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.msg-password {
+    color: #555;
+}
+
+.modal button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 2px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 100px
+}
+
+
+
+
+
+/*==================================================================== */
+/* 페이지 푸터 스타일 */
 footer {
     background-color: #333;
     color: white;
@@ -59,3 +288,24 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+
+#abcd,
+#abc {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 20px;
+    float: right;
+}
+
+
+
+/*=========================================*/
+
+
+
+
+
+
+
+
